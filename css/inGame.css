@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+body .container {
+  position: relative;
+  border: 1px solid #fff;
+  background: url("../img/backgroundInGame.jpg") no-repeat;
+  background-size: cover;
+  margin-top: 5%;
+  float: right;
+  margin-right: 1%;
+  background-color: #fff;
+  box-shadow: 0 0 10px 10px #fff;
+}
+body .container canvas {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+body .toolBars {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 20%;
+  height: 32rem;
+  margin-top: 5%;
+}
+body .toolBars .info {
+  font-family: "Pixelify_Sans";
+  font-size: 4rem;
+}
+body .toolBars .score {
+  margin-left: 3%;
+  width: 25%;
+  font-weight: bold;
+  color: #ffff00;
+}
+body .toolBars .level {
+  margin-left: 3%;
+  width: 25%;
+  font-weight: bold;
+  color: #ff0000;
+}
+body .toolBars .time {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3%;
+  width: 25%;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+@font-face {
+  font-family: "Pixelify_Sans";
+  src: url("../fonts/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf") format("truetype");
+}
